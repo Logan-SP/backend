@@ -9,7 +9,7 @@ from database import create_db_and_tables, get_session
 app = FastAPI(title="API Mercadinho")
 
 
-# CORS — ESSENCIAL para o frontend
+# CORS — ESSA PARTE É O QUE RESOLVE TUDO
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
